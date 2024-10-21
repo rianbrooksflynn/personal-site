@@ -9,38 +9,32 @@ const SideBar = () => (
   <section id="sidebar">
     <section id="intro">
       <Link to="/" className="logo">
-        <img src={`${PUBLIC_URL}/images/me.jpg`} alt="" />
+        <img src={`${PUBLIC_URL}/images/me.jpg`} alt="A headshot of Rian Flynn" />
       </Link>
       <header>
-        <h2>Michael D&apos;Angelo</h2>
+        <h2>Rian Flynn</h2>
+        <h3><a href="https://pronouns.org/they-them" target="_blank" rel="noopener noreferrer">they/them</a></h3>
         <p>
-          <a href="mailto:michael@mldangelo.com">michael@mldangelo.com</a>
+          <a href="mailto:rian@rianflynn.com">rian@rianflynn.com</a>
         </p>
       </header>
     </section>
 
     <section className="blurb">
-      <h2>About</h2>
+      <h2>Intro</h2>
       <p>
-        Hi, I&apos;m Michael. I am a{' '}
-        <a href="https://icme.stanford.edu/">Stanford ICME</a> graduate, YC
-        alumnus, and the co-founder and CTO of{' '}
-        <a href="https://promptfoo.dev">Promptfoo</a>. Previously, I
-        was VP of Engineering at <a href="https://usesmileid.com">SmileID</a>,
-        co-founder and CTO of <a href="https://arthena.com">Arthena</a>, and
-        co-founded <a href="https://matroid.com">Matroid</a>.
+        Hi, I&apos;m Rian. I am a 2024&ndash;2025{' '}
+        <a href="https://a3d3.ai/">A3D3</a> Postbaccalaureate Fellow, working with
+        {' '}<a href="https://mia.physics.purdue.edu/">Prof. Miaoyuan Liu</a>
+        {' '}at Purdue.
+        I was previously a software engineer at <a href="https://www.seeq.com/">Seeq</a>,
+        and I received my S.B. in physics and theater arts from MIT.
       </p>
       <ul className="actions">
         <li>
-          {!window.location.pathname.includes('/resume') ? (
-            <Link to="/resume" className="button">
-              Learn More
-            </Link>
-          ) : (
-            <Link to="/about" className="button">
-              About Me
-            </Link>
-          )}
+          <Link to="/about" className="button">
+            About Me
+          </Link>
         </li>
       </ul>
     </section>
@@ -48,7 +42,7 @@ const SideBar = () => (
     <section id="footer">
       <ContactIcons />
       <p className="copyright">
-        &copy; Michael D&apos;Angelo <Link to="/">mldangelo.com</Link>.
+        &copy; Rian Flynn <Link to="/">rianflynn.com</Link>.
       </p>
     </section>
   </section>
